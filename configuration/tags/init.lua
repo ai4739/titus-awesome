@@ -13,7 +13,7 @@ local tags = {
   {
     icon = icons.code,
     type = 'code',
-    defaultApp = apps.default.editor,
+    defaultApp = apps.default.terminal,
     screen = 1
   },
   {
@@ -23,15 +23,33 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = apps.default.game,
+    icon = icons.qbit,
+    type = 'qbit',
+    defaultApp = apps.default.qbit,
+    screen = 1
+  },
+  {
+    icon = icons.movie,
+    type = 'movie',
+    defaultApp = apps.default.movie,
     screen = 1
   },
   {
     icon = icons.folder,
     type = 'files',
     defaultApp = apps.default.files,
+    screen = 1
+  },
+  {
+    icon = icons.windows,
+    type = 'windows',
+    defaultApp = apps.default.windows,
+    screen = 1
+  },
+  {
+    icon = icons.linux,
+    type = 'linux',
+    defaultApp = apps.default.terminal,
     screen = 1
   },
   {

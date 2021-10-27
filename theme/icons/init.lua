@@ -9,6 +9,10 @@ return {
   music = dir .. '/music.svg',
   game = dir .. '/google-controller.svg',
   lab = dir .. '/flask.svg',
+  qbit = dir .. '/torrent-white.svg',
+  windows = dir .. '/windows-white.svg',
+  movie = dir .. '/movie-white.svg',
+  linux = dir .. '/linux-white.svg',
   --others
   menu = dir .. '/menu.svg',
   close = dir .. '/close.svg',

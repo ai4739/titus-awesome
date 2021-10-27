@@ -16,28 +16,33 @@ return {
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot screen -p ~/Pictures -d 5000',
     browser = 'brave',
+    qbit = 'qbittorrent',
     editor = 'gedit', -- gui text editor
-    social = 'discord',
+    social = 'telegram',
     game = rofi_command,
-    files = 'nautilus',
+    files = 'pcmanfm',
+    windows = 'virtualbox',
+    movie = 'mkvtoolnix-gui',
     music = rofi_command 
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
-    'picom --config ' .. filesystem.get_configuration_dir() .. '/configuration/picom.conf',
-    'nm-applet --indicator', -- wifi
+    --'picom --config ' .. filesystem.get_configuration_dir() .. '/configuration/picom.conf',
+    'picom -b',
+    --'nm-applet --indicator', -- wifi
     'pnmixer', -- shows an audiocontrol applet in systray when installed.
     --'blueberry-tray', -- Bluetooth tray icon
     'numlockx on', -- enable numlock
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
-    'xfce4-power-manager', -- Power manager
+    --'xfce4-power-manager', -- Power manager
      'flameshot',
-     'synology-drive -minimized',
-     'steam -silent',
-    'feh --randomize --bg-fill ~/.wallpapers/*',
-    '/usr/bin/variety',
+     --'synology-drive -minimized',
+     --'steam -silent',
+    --'feh --randomize --bg-fill ~/.wallpapers/*',
+    --'/usr/bin/variety',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
-    '~/.config/awesome/configuration/awspawn' -- Spawn "dirty" apps that can linger between sessions
+    '~/.config/awesome/configuration/awspawn', -- Spawn "dirty" apps that can linger between sessions
+    '~/.config/awesome/configuration/fehbg' -- set the damn wallpaper ffs
   }
 }
