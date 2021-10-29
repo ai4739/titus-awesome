@@ -19,7 +19,7 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 #### Arch-Based
 
 ```
-yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet qt5-styleplugins papirus-icon-theme pcmanfm-gtk3 nomachine -y
+yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet qt5-styleplugins papirus-icon-theme feh pcmanfm-gtk3 nomachine terminator cmatrix man-db manpages -y
 ```
 
 #### Program list
