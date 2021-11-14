@@ -18,7 +18,7 @@ require('module.decorate-client')
 -- Backdrop causes bugs on some gtk3 applications
 --require('module.backdrop')
 require('module.exit-screen')
-require('module.quake-terminal')
+--require('module.quake-terminal')
 
 -- Setup all configurations
 require('configuration.client')
@@ -45,6 +45,20 @@ _G.client.connect_signal(
     end
   end
 )
+
+--_G.client.connect_signal(
+--  'manage',
+--  function(c)
+--    -- Set the windows at the slave,
+--    -- i.e. put it at the end of others instead of setting it master.
+--    if _G.awesome.startup
+--      and not c.size_hints.user_position 
+--      and not c.size_hints.program_position then
+--        -- Prevent clients from being unreachable after screen count changes.
+--        awful.placement.no_offscreen(c)
+--    end
+--  end
+--)
 
 -- Enable sloppy focus, so that focus follows mouse.
 --[[
